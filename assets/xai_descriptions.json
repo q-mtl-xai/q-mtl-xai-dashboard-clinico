@@ -1,0 +1,16 @@
+{
+  "saliency_latido.png": "Mapa de saliency por clase de latido. Muestra qué regiones del ECG influyen más en la clasificación (normal, paced, PVC, SPB).",
+  "saliency_ventana.png": "Saliency sobre ventanas de 3 s. Útil para entender cómo el modelo mira el ritmo completo, no solo el latido aislado.",
+  "saliency_isquemia.png": "Saliency sobre las 12 derivaciones para isquemia. Promedio por lead, mostrando dónde el modelo pone la atención.",
+  "saliency_promedio_latido.png": "Promedio de saliency por clase (n=30). Compara el foco de atención para normal, paced, PVC y SPB.",
+  "saliency_spb_vs_normal.png": "SPB vs Normal. Muestra por qué el modelo distingue un latido supraventricular prematuro de uno normal.",
+  "saliency_isc_tp_vs_fn.png": "TP vs FN en isquemia. Los verdaderos positivos tienen confianza alta (0.92); los falsos negativos bajan a 0.24, indicando isquemia sutil.",
+  "ig_latido.png": "Integrated Gradients en latidos. Atribución más robusta que saliency, integrada sobre un camino desde baseline.",
+  "ig_ventana.png": "Integrated Gradients en ventanas. Confirma los hallazgos de saliency sobre el ritmo completo.",
+  "ig_isquemia.png": "Integrated Gradients en isquemia. Destaca el segmento ST como principal evidencia de decisión.",
+  "tsne_latido.png": "t-SNE de embeddings de latidos. Cada punto es un latido en el espacio latente; los colores muestran si las clases son separables.",
+  "tsne_isquemia.png": "t-SNE de isquemia. Muestra solapamiento entre normal e isquemia, consistente con la dificultad intrínseca de la tarea.",
+  "tsne_por_tarea.png": "t-SNE comparativo de las 3 tareas. Ilustra cómo el encoder compartido separa las representaciones.",
+  "attention_latido.png": "Pesos de atención del modelo en latidos. Muestra qué instantes temporales usó el AttentionPooling.",
+  "attention_isquemia.png": "Pesos de atención en isquemia. Picos en la zona del segmento ST, confirmando el foco clínico."
+}
